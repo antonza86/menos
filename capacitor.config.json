@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "menos",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

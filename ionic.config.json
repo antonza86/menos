@@ -1,0 +1,7 @@
+{
+  "name": "menos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
