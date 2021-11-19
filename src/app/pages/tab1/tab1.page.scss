@@ -1,9 +1,43 @@
-.square{
-  width: 50%;
-  height: 200vh;
-  background-color: #FFF;
-}
+// .square{
+//   width: 50%;
+//   height: 200vh;
+//   background-color: #FFF;
+// }
 
+ion-segment {
+  border-radius: 50px;
+  --min-height: 40px;
+  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  --background: var(--white-400);
+
+  ion-segment-button {
+    --border-radius: 50px;
+    --color-checked: var(--white-500);
+    --color: var(--scale-green_700);
+    margin-bottom: 0;
+    margin-top: 0;
+    --min-height: 40px;
+    min-height: 40px;
+    
+    &.ios.segment-button-checked{
+      --indicator-color: var(--scale-green_700);
+    }
+    &.md.segment-button-checked{
+      --indicator-color: transparent;
+      background: var(--scale-green_700);
+    }
+
+    &::part(indicator) {
+      padding-inline: 0px;
+    }
+
+    ion-label{
+      margin: 0;
+    }
+  }
+}
 
 .bgseg {
   position: absolute;
@@ -256,20 +290,20 @@ ion-icon {
 
   /* Inside Auto Layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 0px;
-flex-direction: column;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  flex-direction: column;
 
-color: #B5B5B5;
-align-items: center;
+  color: #B5B5B5;
+  align-items: center;
 
-font-family: Nunito;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 16px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .inputemailinput {
@@ -324,6 +358,18 @@ line-height: 16px;
   margin: 20px 0px;
 }
 
+.btnlogin_anton {
+  --background: #1A1A1A;
+  --border-color: #1A1A1A;
+  --border-radius: 50px;
+  --box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+  height: 50px;
+  width: 100%;
+  max-width: 320px;
+}
 .btnlogin {
   position: absolute;
   width: 15%;
@@ -362,6 +408,14 @@ line-height: 16px;
   flex-grow: 0;
 }
 
+.lblacc_anton{
+  font-size: 14px;
+  color: #696969;
+
+  span{
+    font-weight: bold;
+  }
+}
 .lblacc {
   position: absolute;
   left: 2%;
