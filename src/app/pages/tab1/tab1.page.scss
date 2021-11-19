@@ -1,5 +1,158 @@
 .square{
   width: 50%;
   height: 200vh;
-  background-color: red;
+  background-color: #FFF;
+}
+
+
+.bgseg {
+  position: absolute;
+  left: 2%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+
+  background: #F2F2F2;
+  border-radius: 50px;
+  height: 50px;
+  width: 328px;
+}
+
+.segbtnactive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 54px;
+
+  position: absolute;
+  left: 0%;
+  right: 50%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #6C8386;
+  border-radius: 50px;
+}
+
+.segbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 54px;
+
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #F2F2F2;
+  border-radius: 50px;
+}
+
+.lbltextactive {
+  /* Padres */
+  position: static;
+  width: 45px;
+  height: 16px;
+  left: calc(50% - 45px/2);
+  top: calc(50% - 16px/2);
+
+  /* Label 2 */
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  /* White/White 100 */
+  color: #FFFFFF;
+
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.lbltext {
+  /* LABEL */
+  position: static;
+  width: 33px;
+  height: 16px;
+  left: calc(50% - 33px/2);
+  top: calc(50% - 16px/2);
+
+  /* Label 2 */
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  /* Black/Black 200 */
+
+  color: #696969;
+
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.btnapple {
+  position: absolute;
+  width: 328px;
+  height: 50px;
+  left: 2%;
+  top: 22%;
+  
+  /* Label 1 */
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #1A1A1A;
+  --background: #FFFFFF;
+  --border-color: #1A1A1A;
+  --border-radius: 50px;
+  --border-style: solid;
+  --border-width: 2px;
+  --box-shadow: none;
+}
+
+ion-icon {
+  &.appleicon {
+    width: 17px;
+    height: 20px;
+
+    position: absolute;
+    left: 5%;
+    right: 0;
+    top: 22%;
+    bottom: 0;
+  }
 }

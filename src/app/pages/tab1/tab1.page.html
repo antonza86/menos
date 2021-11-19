@@ -7,7 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-title size="large">Nao é necesario usar todas as componentes de ionic, so as que consideres correctas</ion-title>
+  <!-- <ion-title size="large">Nao é necesario usar todas as componentes de ionic, so as que consideres correctas</ion-title> -->
 
-  <div class="square"></div>
+  <div class="square">
+    <ion-segment class="bgseg" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="padres" class="segbtnactive">
+        <ion-label class="lbltextactive">PADRES</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="hijos" class="segbtn">
+        <ion-label class="lbltext">HIJOS</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-button class="btnapple"><ion-icon class="appleicon" src="assets/Vectorapple.svg"></ion-icon>APPLE</ion-button>
+  </div>
 </ion-content>
